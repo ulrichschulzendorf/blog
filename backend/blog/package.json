@@ -2,7 +2,8 @@
   "name": "blog",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
+  
+    "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -12,4 +13,6 @@
     "lowdb": "^2.1.0",
     "morgan": "~1.9.1"
   }
+  
 }
+

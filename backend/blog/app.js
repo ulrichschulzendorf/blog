@@ -5,7 +5,7 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-var blogRouter = require("./routes/blog");
+var blogRouter = require("./routes/blog").default;
 const { setCors } = require("./middleware/security");
 var app = express();
 const adapter = new FileSync("data/db.json");
