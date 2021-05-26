@@ -5,8 +5,11 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var blogRouter = require("./routes/blog");
 const { setCors } = require("./middleware/security");
 var app = express();
+const low = require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
 
 app.use(logger("dev"));
 app.use(express.json());
